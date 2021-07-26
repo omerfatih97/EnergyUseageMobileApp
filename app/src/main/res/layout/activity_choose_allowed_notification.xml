@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="start"
+    android:orientation="vertical"
+    tools:context=".ChooseAllowedNotificationActivity">
+
+    <TextView
+        android:id="@+id/BildirimlerBaslik"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_weight="0.5"
+        android:gravity="bottom|center_vertical"
+        android:paddingStart="10dp"
+        android:text="Choose Notifications Which You Want To Take:"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <Switch
+        android:id="@+id/switchFatura"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.50"
+        android:paddingStart="10dp"
+        android:switchPadding="150dp"
+        android:text="Bill"
+        android:textAlignment="textStart" />
+
+    <Switch
+        android:id="@+id/switchOdeme"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.50"
+        android:paddingStart="10dp"
+        android:text="Delayed Payment" />
+
+    <Switch
+        android:id="@+id/switchOdenmedi"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.50"
+        android:paddingStart="10dp"
+        android:text="Not Paid Bill Warning" />
+
+    <Switch
+        android:id="@+id/switchKampanya"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.50"
+        android:paddingStart="10dp"
+        android:text="Campaigns" />
+
+    <Switch
+        android:id="@+id/switchKesme"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.50"
+        android:paddingStart="10dp"
+        android:text="Disruption" />
+
+    <Switch
+        android:id="@+id/switchActirma"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.50"
+        android:paddingStart="10dp"
+        android:text="Activation" />
+
+    <Switch
+        android:id="@+id/switchTamir"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:gravity="top"
+        android:paddingStart="10dp"
+        android:paddingTop="10dp"
+        android:text="Reparation" />
+
+</LinearLayout>

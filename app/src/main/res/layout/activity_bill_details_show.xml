@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/faturaList"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/zxing_result_view"
+    android:backgroundTint="@color/zxing_result_view"
+    tools:context=".ShowBillDetailsActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center|top"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <ProgressBar
+            android:id="@+id/progressBar_ftrholo"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="285dp"
+            android:layout_height="198dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="63dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="63dp"
+            android:indeterminate="false"
+            android:max="100"
+            android:min="0"
+            android:progress="1"
+            android:progressDrawable="@drawable/circle" />
+
+        <TextView
+            android:id="@+id/ftrholo_txt"
+            android:layout_width="61dp"
+            android:layout_height="45dp"
+            android:layout_alignStart="@+id/progressBar_ftrholo"
+            android:layout_alignTop="@+id/progressBar_ftrholo"
+            android:layout_alignEnd="@+id/progressBar_ftrholo"
+            android:layout_alignBottom="@+id/progressBar_ftrholo"
+            android:layout_marginStart="84dp"
+            android:layout_marginTop="72dp"
+            android:layout_marginEnd="84dp"
+            android:layout_marginBottom="72dp"
+            android:text="TextView"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/donemBaslikTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/progressBar_ftrholo"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="30dp"
+            android:text="Bill Period:"
+            android:textAlignment="textStart"
+            android:textColor="#0F0000"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/donem_f_d_Txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/donemBaslikTxt"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="0dp"
+            android:layout_toEndOf="@+id/donemBaslikTxt"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/seriNoBaslikTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/donemBaslikTxt"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="30dp"
+            android:text="Serial Number:"
+            android:textAlignment="textEnd"
+            android:textColor="#0F0000"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/seriNoTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/seriNoBaslikTxt"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="0dp"
+            android:layout_toEndOf="@+id/seriNoBaslikTxt"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/durumBaslikTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/seriNoBaslikTxt"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="20dp"
+            android:text="Status:"
+            android:textAlignment="center"
+            android:textColor="#0F0000"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/durum_detayTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/durumBaslikTxt"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="0dp"
+            android:layout_toEndOf="@+id/durumBaslikTxt"
+            android:textAlignment="center"
+            android:textColor="#FF0000"
+            android:textSize="24sp"
+            android:visibility="visible"
+            tools:visibility="visible" />
+
+        <Button
+            android:id="@+id/mapBtn"
+            android:layout_width="143dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/durumBaslikTxt"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="120dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="120dp"
+            android:background="@drawable/border"
+            android:drawableLeft="@drawable/ic_baseline_map_24"
+            android:text="Payment Points"
+            android:textColor="#056A98"
+            tools:visibility="visible" />
+    </RelativeLayout>
+
+</LinearLayout>

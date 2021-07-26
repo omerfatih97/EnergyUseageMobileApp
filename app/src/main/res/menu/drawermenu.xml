@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/Kullanici"
+        android:icon="@drawable/ic_user"
+        android:title="User Page" />
+    <item
+        android:id="@+id/AnaSayfa"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:title="Main Page" />
+    <item
+        android:id="@+id/Grafik"
+        android:icon="@drawable/ic_baseline_show_chart_24"
+        android:title="Graphics" />
+    <item
+        android:id="@+id/Borçlar"
+        android:icon="@drawable/ic_baseline_archive_24"
+        android:title="Bills" />
+    <item
+        android:id="@+id/Ayarlar"
+        android:icon="@drawable/ic_baseline_settings_24"
+        android:title="Settings" />
+    <item
+        android:id="@+id/Logout"
+        android:icon="@drawable/ic_baseline_arrow_back_24"
+        android:title="Logout" />
+</menu>

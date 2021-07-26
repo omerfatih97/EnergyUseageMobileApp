@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragmentDetay"
+    android:id="@+id/giris_RL"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="381dp"
+        android:layout_height="721dp"
+        android:layout_gravity="center">
+
+        <ProgressBar
+            android:id="@+id/progressBarDetay"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="86dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="0dp"
+            android:gravity="left|center_vertical"
+            android:max="100"
+            android:min="1"
+            android:progress="0"
+            android:scaleY="15" />
+
+        <TextView
+            android:id="@+id/buayTxt"
+            android:layout_width="347dp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/progressBarDetay"
+            android:layout_alignTop="@+id/progressBarDetay"
+            android:layout_alignEnd="@+id/progressBarDetay"
+            android:layout_alignBottom="@+id/progressBarDetay"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="3dp"
+            android:layout_marginBottom="20dp"
+            android:text="This Month"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <ProgressBar
+            android:id="@+id/progressIlOrt"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="86dp"
+            android:layout_below="@+id/progressBarDetay"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="17dp"
+            android:layout_marginTop="-5dp"
+            android:layout_marginEnd="0dp"
+            android:gravity="left|center_vertical"
+            android:max="100"
+            android:min="1"
+            android:progress="0"
+            android:scaleY="15" />
+
+        <TextView
+            android:id="@+id/IlOrtTxt"
+            android:layout_width="347dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/progressIlOrt"
+            android:layout_alignEnd="@+id/progressIlOrt"
+            android:layout_alignBottom="@+id/progressIlOrt"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="3dp"
+            android:layout_marginBottom="20dp"
+            android:text="City Average"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+</LinearLayout>

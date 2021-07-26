@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/zxing_result_view"
+    android:orientation="vertical"
+    tools:context=".viewBillByContractNumber">
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="100dp"
+        android:layout_weight="1"
+        android:minWidth="150dp"
+        android:textAlignment="center" />
+
+    <com.example.codebasev1.SortableFaturaTableView
+        android:id="@+id/tableView"
+        android:layout_width="match_parent"
+        android:layout_height="295dp"
+        android:layout_below="@+id/spinner"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        app:tableView_columnCount="3"
+        app:tableView_headerColor="@color/primary"
+        app:tableView_headerElevation="10"
+        tools:visibility="visible" />
+
+
+</RelativeLayout>
